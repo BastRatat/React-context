@@ -1,0 +1,9 @@
+## Excluded files
+*.*
+!*.js
+!*.jsx
+!*.ts
+!*.tsx
+
+## Exclude generated graphql.js
+*.*.js
