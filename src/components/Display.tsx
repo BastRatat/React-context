@@ -1,15 +1,17 @@
 import React, { useContext } from 'react'
 import { UserContext } from '../UserContext'
 
+const footerStyle = {
+  marginTop: '10px',
+}
+
 const Display = () => {
-  const { user, changeUser } = useContext(UserContext)
+  const { user } = useContext(UserContext)
   return (
-    <div>
-      <p>{user} is online from a Consumer.</p>
-      <button type="submit" onClick={changeUser}>
-        Change user
-      </button>
-    </div>
+    <footer style={footerStyle}>
+      <h3>Display a new user using React Context API</h3>
+      <p>User: {user}</p>
+    </footer>
   )
 }
 
